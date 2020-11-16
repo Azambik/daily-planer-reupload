@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      
+      <p id="currentDay" class="lead">date</p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <!--setting up col and rows to be used for each hr of the day-->
+        <div class="col-1 h-100 0t">1AM</div>
+        <div class="col-8 h-100 0t">
+          <p id="0">
+            input task for 1AM
+          </p>
+        </div>
+        <!--id1-24 is used to identify the individual lock and unlock icons and decide if a field can be edited-->
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id1"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 1t">2AM</div>
+        <div class="col-8 h-100 1t">
+          <p id="1">
+            input task for 2AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id2"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 2t">3AM</div>
+        <div class="col-8 h-100 2t">
+          <p id="2">
+            input task for 3AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id3"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 3t">4AM</div>
+        <div class="col-8 h-100 3t">
+          <p id="3">
+            input task for 4AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id4"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 4t">5AM</div>
+        <div class="col-8 h-100 4t">
+          <p id="4">
+            input task for 5AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id5"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 5t">6AM</div>
+        <div class="col-8 h-100 5t">
+          <p id="5">
+            input task for 6AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id6"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 6t">7AM</div>
+        <div class="col-8 h-100 6t">
+          <p id="6">
+            input task for 7AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id7"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 7t">8AM</div>
+        <div class="col-8 h-100 7t">
+          <p id="7">
+            input task for 8AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id8"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 8t">9AM</div>
+        <div class="col-8 h-100 8t">
+          <p id="8">
+            input task for 9AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id9"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 9t">10AM</div>
+        <div class="col-8 h-100 9t">
+          <p id="9">
+            input task for 10AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id10"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 10t">11AM</div>
+        <div class="col-8 h-100 10t">
+          <p id="10">
+            input task for 11AM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id11"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 11t">12PM</div>
+        <div class="col-8 h-100 11t">
+          <p id="11">
+            input task for 12PM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id12"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 12t">1PM</div>
+        <div class="col-8 h-100 12t">
+          <p  id="12">
+            input task for 1pM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id13"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 13t">2PM</div>
+        <div class="col-8 h-100 13t">
+          <p  id="13">
+          input task for 2pM
+        </p></div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id14"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 14t">3PM</div>
+        <div class="col-8 h-100 14t">
+          <p  id="14">
+          input task for 3pM
+        </p>
+      </div>
+      <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id15"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 15t">4pm</div>
+        <div class="col-8 h-100 15t">
+          <p id="15">
+            input task for 4pM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id16"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 16t">5PM</div>
+        <div class="col-8 h-100 16t">
+          <p id="16">
+            input task for 5pM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id17"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 17t">6PM</div>
+        <div class="col-8 h-100 17t">
+          <p id="17">
+            input task for 6pM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id18"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 18t">7PM</div>
+        <div class="col-8 h-100 18t">
+          <p id="18">
+            input task for 7pM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id19"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 19t">8PM</div>
+        <div class="col-8 h-100 19t">
+          <p id="19">
+            input task for 8pM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id20"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 20t">9PM</div>
+        <div class="col-8 h-100 20t">
+          <p id="20">
+            input task for 9pM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id21"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 21t">10PM</div>
+        <div class="col-8 h-100 21t">
+          <p id="21">
+            input task for 10pM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id22"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 22t">11PM</div>
+        <div class="col-8 h-100 22t">
+          <p id="22">
+            input task for 11pM
+          </p>
+        </div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id23"></span></div>
+        <div class="w-100"></div>
+        <div class="col-1 h-100 23t">12AM</div>
+        <div class="col-8 h-100 23t">
+          <p id="23">
+          input task for 12AM
+        </p></div>
+        <div class="col-1 h-100 text-center unlock"><span class="oi oi-lock-unlocked unlockedi id24"></span></div>
+        <div class="w-100"></div>
+        
+        
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
